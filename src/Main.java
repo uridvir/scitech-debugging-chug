@@ -38,10 +38,10 @@ public class Main {
 		problems.add(buggy3);
 		
 		Problem<Integer[], Boolean> buggy4 = new Problem<>(new Buggy_4());
-		buggy4.addCase(new Integer[] {1, 2, 3, 4, 5}, false);
+		buggy4.addCase(new Integer[] {1, 2, 3, 4, 1}, false);
 		buggy4.addCase(new Integer[] {1, 2, 3, 5, 11, 5, 3, 2, 1}, true);
 		buggy4.addCase(new Integer[] {3, 2, 2, 3}, true);
-		buggy4.addCase(new Integer[] {1, 2, 2, 1, 2}, false);
+		buggy4.addCase(new Integer[] {1, 2, 2, 1, 1}, false);
 		buggy4.addCase(new Integer[] {}, false);		
 		problems.add(buggy4);
 		
@@ -65,13 +65,13 @@ public class Main {
 		buggy7.addCase(new Integer[] {0, 3, 3, 6, 9, 15}, true);
 		buggy7.addCase(new Integer[] {1, 1, 2, 3, 5, 8, 13}, true);
 		buggy7.addCase(new Integer[] {0, 1, 2, 3, 4, 5}, false);
-		buggy7.addCase(new Integer[] {0, 2, 4, 6, 8}, false);
+		buggy7.addCase(new Integer[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 3, 5}, false);
 		buggy7.addCase(new Integer[] {}, false);
 		problems.add(buggy7);
 		
 		Problem<String, Integer> buggy8 = new Problem<>(new Buggy_8());
 		buggy8.addCase("antidisestablishmentarianism", 11);
-		buggy8.addCase("URJ 6 Points Sci Tech Academy", 10);
+		buggy8.addCase("URJ 6 Points Sci Tech Academy", 8);
 		buggy8.addCase("sausage", 4);
 		buggy8.addCase("syzygy", 0);
 		buggy8.addCase("Waluigi", 4);
@@ -88,7 +88,7 @@ public class Main {
 		Problem<String[], String[]> buggy10 = new Problem<>(new Buggy10());
 		buggy10.addCase(new String[] {"to", "be", "or", "not", "to", "be"}, new String[] {"be", "to", "to", "be", "or", "not"});
 		buggy10.addCase(new String[] {"a", "b", "c", "d", "e", "f"}, new String[] {"f", "e", "a", "b", "c", "d"});
-		buggy10.addCase(new String[] {"URJ", "6", "Points", "Sci", "Tech", "Academy"}, new String[] {"Tech", "Academy", "URJ", "6", "Points", "Sci"});
+		buggy10.addCase(new String[] {"URJ", "6", "Points", "Sci", "Tech", "Academy"}, new String[] {"Academy", "Tech", "URJ", "6", "Points", "Sci"});
 		buggy10.addCase(new String[] {"Fortnite bad"}, new String[] {"Fortnite bad"});
 		buggy10.addCase(new String[] {"Minecraft good"}, new String[] {"Minecraft good"});
 		problems.add(buggy10);
@@ -121,13 +121,13 @@ public class Main {
 		buggy14.addCase(0, 3);
 		buggy14.addCase(1, 1);
 		buggy14.addCase(3, 1);
-		buggy14.addCase(7, 2);
-		buggy14.addCase(11, 5);
+		buggy14.addCase(6, 2);
+		buggy14.addCase(8, 5);
 		problems.add(buggy14);
 		
 		Problem<Integer, Integer> buggy15 = new Problem<>(new Buggy15());
 		buggy15.addCase(50, 44);
-		buggy15.addCase(100, 188);
+		buggy15.addCase(100, 44);
 		buggy15.addCase(400, 188);
 		buggy15.addCase(1000, 798);
 		buggy15.addCase(4000000, 4613732);

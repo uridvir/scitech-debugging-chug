@@ -121,7 +121,7 @@ public class Problem<Input, Output> {
 				System.out.println("failed with:");
 				
 				StackTraceElement[] stackTrace = e.getStackTrace();
-				stackTrace = Arrays.copyOfRange(stackTrace, 0, stackTrace.length > 5 ? 5 : stackTrace.length - 1);
+				stackTrace = Arrays.copyOfRange(stackTrace, 0, stackTrace.length > 5 ? 5 : stackTrace.length);
 				
 				System.out.println(e.toString());
 				
